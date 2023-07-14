@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="left">
+        <div class="image">
+            <div class="logo">
+                <img src="odin.png" alt="logo">
+            </div>
+        </div>
+    </div>
+    
+    <div class="form">
+        <div>
+            <p>Welcome to the Odin project. <br>
+                Please fill in your details below:
+            </p>
+            <p>Let's do this!</p>
+            <form>
+                <div class="grid">
+                    <div class="input">
+                        <label for="first_name">First Name:</label>
+                        <input type="text" id="first_name" required>
+                    </div>
+                    <div class="input">
+                        <label for="last_name">Last Name:</label>
+                        <input type="text" id="last_name" required>
+                    </div>
+                    <div class="input">
+                        <label for="user_email">Email:</label>
+                        <input type="email" id="user_email" name="email" placeholder="you@example.com" required>
+                    </div>
+                    <div class="input">
+                        <label for="phone_number">Phone number:</label>
+                        <input type="text" id="phone_number" name="phone_number" pattern="(\d{10})" required>
+                    </div>
+                    <div class="input">
+                        <label for="user_password">Password:</label>
+                        <input type="password" class="error" id="user_password" name="password" required>
+                    </div>
+                    <div class="input">
+                        <label for="user_confirm_password">Confirm password:</label>
+                        <input type="password" class="error" id="user_confirm_password" name="confirm_password" required>
+                    </div>
+                </div>
+                <br>
+                <button type="submit" class="submit_btn">Create account</button>
+                <p>Already have an account? <span class="hyperlink">Log in</span></p>
+
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>
