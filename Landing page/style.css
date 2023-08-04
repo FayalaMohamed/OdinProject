@@ -2,6 +2,19 @@
     font-size: 18px;
 }
 
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+body>* {
+    margin: 0;
+    padding: 0;
+}
+
 .flex-container {
     display: flex;
     justify-content: center;
@@ -12,6 +25,8 @@
 }
 
 .darkblue-container {
+    padding-right: 200px;
+    padding-left: 200px;
     background: #1F2937;
     color: #E5E7EB;
     font-size: 18px;
