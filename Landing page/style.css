@@ -1,0 +1,97 @@
+:root {
+    font-size: 18px;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+}
+
+.flex-container div {
+    flex: 1;
+}
+
+.darkblue-container {
+    background: #1F2937;
+    color: #E5E7EB;
+    font-size: 18px;
+}
+
+.grey-container {
+    background: #E5E7EB;
+}
+
+.title {
+    color: #F9FAF8;
+    font-weight: 800;
+    font-size: 48px;
+}
+
+.header-logo {
+    font-size: 24px;
+    color: #F9FAF8;
+}
+
+.rounded-btn {
+    background-color: #2882F6;
+    border: none;
+    color: white;
+    padding: 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    border-radius: 8px;
+}
+
+.blue-rounded {
+    background-color: #2882F6;
+    border-radius: 8px;
+}
+
+.center-content {
+    text-align: center;
+}
+
+.first-img {
+    max-width: 200px;
+}
+
+.second-img {
+    max-width: 100px;
+    border: 5px;
+    border-radius: 8px;
+    border-color: #2882F6;
+}
+
+.quote {
+    font-size: 36px;
+    font-style: italic;
+    color: #1F2937;
+}
+
+.person {
+    color: #1F2937;
+    font-weight: 800;
+}
+
+.bold-blue-text {
+    color: #1F2937;
+    font-weight: bold;
+    font-size: 36px;
+}
+
+.blue-container {
+    background-color: #2882F6;
+    color: #E5E7EB;
+}
+
+.rounded-btn .white-border {
+    border: 2px;
+    border-color: #E5E7EB;
+}
+
+.bold-text {
+    font-weight: bold;
+}
