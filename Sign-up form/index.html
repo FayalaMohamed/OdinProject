@@ -16,47 +16,42 @@
             </div>
         </div>
     </div>
-    
-    <div class="form">
-        <div>
-            <p>Welcome to the Odin project. <br>
-                Please fill in your details below:
-            </p>
-            <p>Let's do this!</p>
-            <form>
-                <div class="grid">
-                    <div class="input">
-                        <label for="first_name">First Name:</label>
-                        <input type="text" id="first_name" required>
-                    </div>
-                    <div class="input">
-                        <label for="last_name">Last Name:</label>
-                        <input type="text" id="last_name" required>
-                    </div>
-                    <div class="input">
-                        <label for="user_email">Email:</label>
-                        <input type="email" id="user_email" name="email" placeholder="you@example.com" required>
-                    </div>
-                    <div class="input">
-                        <label for="phone_number">Phone number:</label>
-                        <input type="text" id="phone_number" name="phone_number" pattern="(\d{10})" required>
-                    </div>
-                    <div class="input">
-                        <label for="user_password">Password:</label>
-                        <input type="password" class="error" id="user_password" name="password" required>
-                    </div>
-                    <div class="input">
-                        <label for="user_confirm_password">Confirm password:</label>
-                        <input type="password" class="error" id="user_confirm_password" name="confirm_password" required>
-                    </div>
-                </div>
-                <br>
-                <button type="submit" class="submit_btn">Create account</button>
-                <p>Already have an account? <span class="hyperlink">Log in</span></p>
 
-            </form>
+    <form class="form">
+        <p>Welcome to the Odin project. <br>
+            Please fill in your details below:
+        </p>
+        <p>Let's do this!</p>
+        <div class="grid">
+            <div class="input">
+                <label for="first_name">First Name:</label>
+                <input type="text" id="first_name" required>
+            </div>
+            <div class="input">
+                <label for="last_name">Last Name:</label>
+                <input type="text" id="last_name" required>
+            </div>
+            <div class="input">
+                <label for="user_email">Email:</label>
+                <input type="email" id="user_email" name="email" placeholder="you@example.com" required>
+            </div>
+            <div class="input">
+                <label for="phone_number">Phone number:</label>
+                <input type="text" id="phone_number" name="phone_number" pattern="(\d{10})" required>
+            </div>
+            <div class="input">
+                <label for="user_password">Password:</label>
+                <input type="password" class="error" id="user_password" name="password" required>
+            </div>
+            <div class="input">
+                <label for="user_confirm_password">Confirm password:</label>
+                <input type="password" class="error" id="user_confirm_password" name="confirm_password" required>
+            </div>
         </div>
-    </div>
+        <br>
+        <button type="submit" class="submit_btn">Create account</button>
+        <p>Already have an account? <label class="hyperlink" for="login">Log in</label></p>
+    </form>
 
 </body>
 
