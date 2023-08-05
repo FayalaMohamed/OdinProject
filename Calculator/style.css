@@ -1,0 +1,47 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fefae0;
+    font-size: 22px;
+}
+
+.calculator {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: repeat(7, 70px);
+}
+
+.calculator>* {
+    border: 1px solid black;
+}
+
+.btn {
+    background-color: #d4a373;
+    text-align: center;
+    font-size: 22px;
+}
+
+.resultDiv {
+    background-color: #d4a373;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.CLEAR {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.DELETE {
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+
+.EQUAL {
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
