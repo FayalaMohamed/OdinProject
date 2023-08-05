@@ -1,4 +1,6 @@
 const TAB = ["rock", "paper", "scissors"];
+let nbPlayer = 0;
+let nbComputer = 0;
 
 function getComputerChoice() {
     return Math.floor(Math.random() * TAB.length)
@@ -22,12 +24,34 @@ function decide(playerSelection) {
 function playRound(playerSelection) {
     let res = decide(playerSelection);
     const p = document.getElementById("result");
-    if (res == 1)
-        p.innerHTML = `You won!`;
-    else if (res == -1)
-        p.innerHTML = `You lost...`;
-    else
-        p.innerHTML = `It's a tie!`
+    const player = document.getElementById("playerPoints");
+    const comp = document.getElementById("computerPoints");
+    if (res == 1) {
+        p.textContent = `You won!`;
+        nbPlayer += 1;
+        player.textContent = nbPlayer;
+    }
+    else if (res == -1) {
+        p.textContent = `You lost...`;
+        nbComputer += 1;
+        comp.textContent = nbComputer;
+    } else
+        p.textContent = `It's a tie!`
+
+
+    if (nbComputer == 5 || nbPlayer == 5) {
+        p.textContent = ``;
+        if (nbComputer == 5) {
+            window.alert('You lost');
+        } else {
+            window.alert('Congratulations you won!');
+        }
+        nbPlayer = 0;
+        nbComputer = 0;
+        comp.textContent = nbComputer;
+        player.textContent = nbPlayer;
+    }
+
 }
 
 function game(nbGames) {
