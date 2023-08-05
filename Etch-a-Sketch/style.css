@@ -1,0 +1,28 @@
+:root {
+    text-align: center;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid {
+    display: grid;
+    grid-template-rows: repeat(20, 20px);
+    grid-template-columns: repeat(20, 20px);
+    border-radius: 3px;
+    border-color: black;
+    background-color: white;
+}
+
+.title {
+    font-size: 48px;
+    font-weight: 800;
+}
+
+.subtitle {
+    font-size: 24px;
+}
