@@ -1,0 +1,47 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fefae0;
+    font-size: 22px;
+    font-family: 'Poppins', sans-serif;
+}
+
+input {
+    font-size: 22px;
+}
+
+.addBookSection {
+    display: flex;
+    margin: 2px -5px;
+}
+
+.thead {
+    border-bottom: 1px solid #000;
+}
+
+
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+td,
+th {
+    text-align: center;
+    padding: 20px;
+}
+
+.false {
+    border-color: red;
+    border-radius: 3px;
+    background-color: white;
+}
+
+.true {
+    border-color: green;
+    border-radius: 3px;
+    background-color: white;
+}
