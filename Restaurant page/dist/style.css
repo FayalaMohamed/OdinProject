@@ -1,0 +1,58 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fefae0;
+    font-size: 22px;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* Style for the container */
+nav {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.title {
+    color: #3498db;
+}
+
+nav>button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    font-size: 18px;
+}
+
+nav>button:hover {
+    background-color: #2980b9;
+}
+
+.displayDivHome {
+    justify-content: center;
+    text-align: center;
+}
+
+.displayDivMenu {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    grid-gap: 40px;
+    justify-content: center;
+}
+
+.displayDivMenu>.menu-item>img {
+    width: 150px;
+    height: 150px;
+}
