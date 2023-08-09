@@ -13,10 +13,10 @@ function buildUrl() {
 
 function getData() {
     let url = buildUrl();
-    fetch(url, {mode: 'cors'})
-    .then(function(response) {
-      console.log(response.json());
-    });    
+    return fetch(url, { mode: 'cors' })
+        .then(function (response) {
+            return response.json();
+        });
 }
 
-export {getData}
+export { getData };
