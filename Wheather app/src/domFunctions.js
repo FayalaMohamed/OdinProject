@@ -103,12 +103,14 @@ async function createWebsite() {
     createHeader();
     createCentralElements();
     createFooter();
+    await updateDOM();
 
     const submitBtn = document.querySelector('input[type="submit"]');
     submitBtn.addEventListener('click', async (event) => {
         event.preventDefault();
         await updateDOM();
     });
+
 }
 
 
