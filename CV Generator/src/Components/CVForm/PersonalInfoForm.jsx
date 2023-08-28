@@ -11,6 +11,7 @@ function PersonalInfoForm({
 }) {
   return (
     <div className="formElement personalInfo">
+      <h3>Personal information</h3>
       <input type="text" placeholder="Last Name" onChange={onLastName} />
       <input type="text" placeholder="First Name" onChange={onFirstName} />
       <input type="text" placeholder="Title" onChange={onTitle} />

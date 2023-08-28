@@ -2,7 +2,7 @@ import { useState } from 'react'
 import './App.css'
 import Preview from './Components/CVPreview/Preview'
 import CVForm from './Components/CVForm/CVForm';
-import { v4 as uuidv4 } from 'uuid';;
+import { v4 as uuidv4 } from 'uuid';
 
 function App() {
   const [first, setFirst] = useState(null);
@@ -117,7 +117,7 @@ function App() {
 
   return (
     <>
-      <div className="rootDiv">
+      <div className="contentDiv">
         <CVForm onLastName={onLastName} onFirstName={onFirstName} onTitle={onTitle} onAddress={onAddress} onPhone={onPhoneNumber} onEmail={onEmail} onDescription={onDescription} addEducation={addEducation} education={education}
           deleteEducation={deleteEducation} saveEducation={saveEducation} addExperience={addExperience} experiences={experiences} deleteExperience={deleteExperience} saveExperience={saveExperience}></CVForm>
         <Preview first={first} last={last} title={title} address={address} phone={phone} mail={mail} description={description} experiences={experiences} education={education}></Preview>
