@@ -1,13 +1,13 @@
-import { useState } from 'react'
-import './App.css'
-import Preview from './Components/CVPreview/Preview'
-import CVForm from './Components/CVForm/CVForm';
+import { useState } from 'react';
 import { v4 as uuidv4 } from 'uuid';
+import './App.css';
+import CVForm from './Components/CVForm/CVForm';
+import Preview from './Components/CVPreview/Preview';
 
 function App() {
   const [first, setFirst] = useState(null);
   const [last, setLast] = useState(null);
-  const [title, setTitle] = useState(null);
+  const [title, setTitle] = useState(null); 
   const [description, setDescription] = useState(null);
   const [address, setAddress] = useState(null);
   const [mail, setMail] = useState(null);
