@@ -1,0 +1,11 @@
+extends layout
+
+block content 
+    h1= "New message"
+    form(action="/new" method="POST")
+        p Author:
+        input(type="text" name="author" placeholder="Author")
+        p Message:
+        input(type="text" name="message" placeholder="Message")
+        input(type="submit", value="Add message")
+

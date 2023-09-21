@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  h1= title
+  p Here are your messages :
+
+  ul 
+    each message in messages
+      li= message.author + ' said ' + message.message + ' on ' + message.date
+
+  form(action="/" method="POST")
+        input(type="submit", value="Add message")
