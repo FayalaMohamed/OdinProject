@@ -17,7 +17,7 @@ function merge(left, right) {
             ++leftInd;
         } else {
             res.push(right[rightInd]);
-            ++rightInd;
+            ++rightInd ;
         }
     }
 
