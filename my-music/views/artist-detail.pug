@@ -6,10 +6,10 @@ block content
     ul
         li #[strong Professional name: ] #{artist.professional_name}
         li #[strong Birth name: ] #{artist.birth_name}
-        li #[strong Date of birth: ] #{artist.date_of_birth}
-        if artist.professional_name
-            li #[strong Professional name: ] #{artist.professional_name}
+        li #[strong Date of birth: ] #{artist.date_of_birth_formatted}
         li #[strong Place of birth: ] #{artist.place_of_birth}
+        if artist.date_of_death
+            li #[strong Date of death: ] #{artist.date_of_death_formatted}
         li #[strong Occupations: ] 
             span
                 each occupation, index in artist.occupations
@@ -27,5 +27,11 @@ block content
                 each album in artist_albums 
                     li
                         a(href=album.url) #{album.name}
+
+    hr
+    p
+        a(href=artist.url+'/delete') Delete Artist
+    p
+        a(href=artist.url+'/update') Update Artist
 
             

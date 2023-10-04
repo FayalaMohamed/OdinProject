@@ -9,9 +9,9 @@ block content
             label(for='professional_name') Professional name: 
             input#professional_name.form-control(type='text' placeholder='Professional name' name='professional_name' required='true' value=(undefined===artist ? '' : artist.professional_name))
             label(for='date_of_birth') Date of birth: 
-            input#date_of_birth.form-control(type='date' name='date_of_birth' required='true' value=(undefined===artist ? '' : artist.date_of_birth))
+            input#date_of_birth.form-control(type='date' name='date_of_birth' required='true' value=(undefined===artist ? '' : (artist.date_of_birth ? artist.date_of_birth.toISOString().split('T')[0] : '')))
             label(for='date_of_death') Date of death: 
-            input#date_of_death.form-control(type='date' name='date_of_death' value=(undefined===artist ? '' : artist.date_of_death))
+            input#date_of_death.form-control(type='date' name='date_of_death' value=(undefined===artist ? '' : (artist.date_of_death ? artist.date_of_death.toISOString().split('T')[0] : '')))
             label(for='place_of_birth') Place of birth: 
             input#place_of_birth.form-control(type='text' placeholder='Place of birth' name='place_of_birth' value=(undefined===artist ? '' : artist.place_of_birth))
 
