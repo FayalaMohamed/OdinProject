@@ -1,0 +1,31 @@
+extends layout 
+
+block content 
+    h1= title 
+
+    ul
+        li #[strong Professional name: ] #{artist.professional_name}
+        li #[strong Birth name: ] #{artist.birth_name}
+        li #[strong Date of birth: ] #{artist.date_of_birth}
+        if artist.professional_name
+            li #[strong Professional name: ] #{artist.professional_name}
+        li #[strong Place of birth: ] #{artist.place_of_birth}
+        li #[strong Occupations: ] 
+            span
+                each occupation, index in artist.occupations
+                    if index === 0
+                        | #{occupation}
+                    else
+                        | - #{occupation} 
+        li #[strong Genres: ] 
+            ul 
+                each genre in artist.genres 
+                    li
+                        a(href=genre.url) #{genre.name}
+        li #[strong Albums: ] 
+            ul 
+                each album in artist_albums 
+                    li
+                        a(href=album.url) #{album.name}
+
+            

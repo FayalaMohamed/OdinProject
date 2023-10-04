@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+
+  p The library contains this much artists, albums and genres :
+
+  ul 
+    li Artists : !{nb_artists}
+    li Albums : !{nb_albums}
+    li Genres : !{nb_genres}
